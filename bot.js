@@ -2,7 +2,7 @@ const Telegraf = require('telegraf');
 const Markup = require('telegraf/markup');
 // require('dotenv').config();
 let text = require('./const');
-const bot = new Telegraf('5742419595:AAE6D6Z-etTX8WCPpiNtyxivaNPzqYItCTY');
+const bot = new Telegraf('5742419tCTY');
 // bot.start((ctx) =>
 //   ctx.reply(
 //     `  Привет ${ctx.message.from.first_name}!.
