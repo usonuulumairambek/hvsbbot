@@ -75,6 +75,9 @@ bot.hears('Скидка 20%', (context) => {
 bot.on('text', (www) => {
   console.log(www);
   let id = 501776073;
+  let id2 = 1498188820;
+  www.telegram.sendMessage(id2, `Новая заявка на бронь:  ${www.update.message.text}`);
+
   www.telegram.sendMessage(id, `Новая заявка на бронь:  ${www.update.message.text}`);
 
   www.telegram.sendMessage(
@@ -83,6 +86,7 @@ bot.on('text', (www) => {
      В ближайшее время с вами свяжутся для подтверждения резерва.
      Прекрасного дня!`
   );
+  console.log(www.message.chat.id);
   console.log(www.update.message.text);
   // www.reply(`Спасибо! Я уже передал ваши данные хостес.
   //      В ближайшее время с вами свяжутся для подтверждения резерва.
